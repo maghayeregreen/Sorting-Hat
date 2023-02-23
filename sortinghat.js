@@ -19,7 +19,7 @@ readline.question('Welcome to Hogwarts! What is your name? ', name => {
   console.log(`Congratulations, ${name}! You have been assigned to ${assignedHouse}.`);
 
   // Asks the user if they have a preferred House
-  readline.question(`Hmmmm..do you have a preferred Hogwarts House, ${name}? Yes or No `, hasPreference => {
+  readline.question(`Hmmmm..do you have a preferred Hogwarts House, ${name}? (yes/no) `, hasPreference => {
     let chosenHouse;
 
     // If the user has a preference, ask them to choose a House and assign it to them
