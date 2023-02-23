@@ -19,7 +19,7 @@ readline.question('Welcome to Hogwarts! What is your name? ', name => {
   console.log(`Congratulations, ${name}! You have been assigned to ${assignedHouse}.`);
 
   // Asks the user if they have a preferred House
-  readline.question(`Hmmmm..do you have a preferred Hogwarts House, ${name}? (yes/no) `, hasPreference => {
+  readline.question(`Hmmmm..do you have a preferred Hogwarts House, ${name}? Yes or No `, hasPreference => {
     let chosenHouse;
 
     // If the user has a preference, ask them to choose a House and assign it to them
@@ -28,7 +28,7 @@ readline.question('Welcome to Hogwarts! What is your name? ', name => {
         // Checks that the user has entered a valid House name
         if (!advice[housePreference]) {
           // If the user has entered an invalid House name, assign the House they were randomly assigned to
-          console.log('No! that is not a valid House name! You will be assigned the House I originally assigned you to.');
+          console.log('No! that is not a House name! You will be assigned the House I originally assigned you to.');
           chosenHouse = assignedHouse;
         } else {
           chosenHouse = housePreference;
